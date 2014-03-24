@@ -483,8 +483,8 @@ class MainWindow(gtk.Window):
         button = gtk.Button('Focus')
         button.set_tooltip_text("Focus camera automatically")
         button.connect('clicked', self.focus_cb, None)
-        self.toolbar.pack_start(button, False, False)
-        button.show()
+        #self.toolbar.pack_start(button, False, False)
+        #button.show()
 
         photo_image = gtk.image_new_from_file(
                 os.path.join(source_dir, 'data', 'camera_24.png'))
