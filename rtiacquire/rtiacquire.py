@@ -219,7 +219,7 @@ class MainWindow(gtk.Window):
             time.sleep(0.1)
 
             self.camera.preview_to_file(os.path.join(options.tempdir, 
-                'rti_preview_%d.jpg' % i))
+                '%d.jpg' % i))
 	self.camera.release()
         return True
 
