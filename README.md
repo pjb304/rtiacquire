@@ -23,7 +23,14 @@ Prerequistites
 
 libgphoto2 does not work on Windows, so you need a unix-like system of some
 sort. We've used several Linuxes but OS X should work too. On Debian-family
-systems this package is called libgphoto2-2.
+systems this package is called libgphoto2-2. Old versions don't seem to work.
+
+On Ubuntu 16:
+git clone https://github.com/gphoto/libgphoto2.git
+to build it-
+autoconf --install
+./configure 
+sudo make install
 
 RTIAcquire uses IJG libjpeg to decompress preview frames. You must have
 the headers for this library available: jpeglib.h and jerror.h. On
